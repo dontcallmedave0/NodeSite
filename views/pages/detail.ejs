@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_head', { title: item.title }) %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/_nav') %>
+    </header>
+    <main class="container detail">
+      <article class="detail-card">
+        <img src="<%= item.image %>" alt="<%= item.title %>" />
+        <div class="detail-info">
+          <h1><%= item.title %></h1>
+          <p class="price"><%= item.price %></p>
+          <p class="description"><%= item.description %></p>
+          <a class="button" href="/contact">Inquire</a>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <%- include('../partials/_footer') %>
+    </footer>
+  </body>
+</html>

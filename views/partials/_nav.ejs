@@ -1,10 +1,25 @@
 <nav class="nav">
   <a href="/" class="brand">NodeSite</a>
-  <ul>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <ul class="nav-list">
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/services">Services</a></li>
     <li><a href="/blog">Blog</a></li>
+    <li><a href="/items">Collection</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
 </nav>
+
+<script>
+// Minimal client-side toggle for mobile nav
+document.addEventListener('DOMContentLoaded', function(){
+  var btn = document.querySelector('.menu-toggle');
+  var list = document.querySelector('.nav-list');
+  if (!btn || !list) return;
+  btn.addEventListener('click', function(){
+    var visible = list.style.display === 'block';
+    list.style.display = visible ? 'none' : 'block';
+  });
+});
+</script>

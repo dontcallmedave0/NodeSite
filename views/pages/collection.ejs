@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_head', { title: title || 'Collection' }) %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/_nav') %>
+    </header>
+    <main class="container collection">
+      <h1>Collection</h1>
+      <div class="grid">
+        <% items.forEach(function(item){ %>
+          <article class="card">
+            <a href="/items/<%= item.slug %>">
+              <img src="<%= item.image %>" alt="<%= item.title %>" />
+              <h2><%= item.title %></h2>
+            </a>
+            <p class="price"><%= item.price %></p>
+          </article>
+        <% }) %>
+      </div>
+    </main>
+    <footer>
+      <%- include('../partials/_footer') %>
+    </footer>
+  </body>
+</html>

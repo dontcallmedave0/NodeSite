@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Red Ceramic Vase",
+    "slug": "red-ceramic-vase",
+    "price": "$34",
+    "description": "Handmade red ceramic vase. Perfect for small bouquets.",
+    "image": "/images/vase.jpg"
+  },
+  {
+    "title": "Blue Cotton Scarf",
+    "slug": "blue-cotton-scarf",
+    "price": "$22",
+    "description": "Lightweight cotton scarf with blue tones.",
+    "image": "/images/scarf.jpg"
+  },
+  {
+    "title": "Oak Wood Bowl",
+    "slug": "oak-wood-bowl",
+    "price": "$45",
+    "description": "Small oak wood bowl, food-safe finish.",
+    "image": "/images/bowl.jpg"
+  }
+]
