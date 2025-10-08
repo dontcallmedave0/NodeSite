@@ -25,7 +25,7 @@ app.get('/contact', (req, res) => res.render('pages/contact', { title: 'Contact'
 
 // 404 - Page not found
 app.use((req, res) => {
-  res.status(404).render('pages/home', { title: 'Not Found' });
+  res.status(404).render('pages/404', { title: 'Page Not Found' });
 });
 
 // 500 - Server error handler
