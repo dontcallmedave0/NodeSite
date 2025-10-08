@@ -28,6 +28,12 @@ app.use((req, res) => {
   res.status(404).render('pages/home', { title: 'Not Found' });
 });
 
+// 500 - Server error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).render('pages/500', { title: 'Server Error' });
+});
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
