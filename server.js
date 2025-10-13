@@ -64,7 +64,7 @@ app.get('/error', (req, res, next) => {
 
 // 404 - Page not found
 app.use((req, res) => {
-  res.status(404).render('pages/404', { title: 'Not Found' });
+  res.status(404).render('pages/home', { title: 'Not Found' });
 });
 
 // 500 - Server error handler
