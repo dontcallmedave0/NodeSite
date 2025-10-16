@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%- include('../partials/_head', { title }) %>
+    <%- include('../partials/_head', { title: title || 'Home' }) %>
   </head>
   <body>
     <header>
       <%- include('../partials/_nav') %>
     </header>
 
-    <main class="container">
-      <section>
-        <h2>greetings</h2>
-      </section>
-    </main>
+    <section class="home-hero" role="region" aria-label="Welcome">
+      <div class="hero-content">
+        <h1>Welcome to AutoTrading!</h1>
+        <h2>Your one-stop shop for buying and selling cars</h2>
+        <h3>Featured Listings</h3>
+      </div>
+    </section>
 
+    <main class="container collection">
+      <div class="grid">
+        <% (items || []).forEach(function(item){ %>
+          <article class="card">
+            <div class="media">
+              <a href="/items/<%= item.slug %>"><img src="<%= item.image %>" alt="<%= item.title %>" /></a>
+            </div>
+            <div class="body">
+              <a class="title" href="/items/<%= item.slug %>"><%= item.title %></a>
+              <% if (item.mileage) { %>
+                <div class="mileage"><%= item.mileage %></div>
+              <% } %>
+              <div class="meta">
+                <span class="cat"><a href="/category/<%= item.category %>"><%= item.category %></a></span>
+              </div>
+              <div class="price"><%= item.price %></div>
+            </div>
+          </article>
+        <% }) %>
+      </div>
+    </main>
     <footer>
       <%- include('../partials/_footer') %>
     </footer>
+  </body>
   </body>
 </html>

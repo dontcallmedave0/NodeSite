@@ -39,3 +39,38 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222}
 .detail-next{right:6px}
 .detail-carousel[data-js-enabled] .detail-slides{will-change:transform}
 
+
+/* Featured picks styles */
+.featured{margin:14px 0;padding:10px 0}
+.featured-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.featured-head h2{margin:0}
+.featured-head .muted{color:#666;font-size:13px;margin:0}
+.featured-row{display:flex;gap:12px;overflow-x:auto;padding:10px 0}
+.featured-card{min-width:220px;background:#fff;border:1px solid #eee;border-radius:6px;flex:0 0 auto}
+.featured-card a{color:inherit;text-decoration:none;display:block}
+.featured-card .img-wrap{height:140px;overflow:hidden;border-bottom:1px solid #eee}
+.featured-card img{width:100%;height:100%;object-fit:cover;display:block}
+.featured-meta{padding:8px}
+.featured-meta h3{margin:0 0 6px 0;font-size:15px}
+.featured-meta .meta-row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.featured-meta .price{font-weight:700}
+.featured-meta .mileage{color:#666;font-size:13px}
+
+@media(min-width:900px){
+	.featured-row{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}
+	.featured-card{min-width:0}
+}
+
+/* Home hero centered headings */
+.home-hero{display:flex;align-items:center;justify-content:center;padding:28px 12px;background:#f7f7f7;border-bottom:1px solid #eee}
+.hero-content{text-align:center;max-width:900px;margin:0 auto}
+.hero-content h1{margin:0 0 8px 0;font-size:28px}
+.hero-content h2{margin:0 0 8px 0;font-size:18px;color:#555;font-weight:400}
+.hero-content h3{margin:0;font-size:16px;color:#333}
+
+@media(min-width:800px){
+	.home-hero{padding:48px 12px}
+	.hero-content h1{font-size:36px}
+	.hero-content h2{font-size:20px}
+}
+
