@@ -8,18 +8,57 @@
       <%- include('../partials/_nav') %>
     </header>
     <main class="container detail">
-      <article class="detail-card">
-        <img src="<%= item.image %>" alt="<%= item.title %>" />
-        <div class="detail-info">
-          <h1><%= item.title %></h1>
-          <p class="price"><%= item.price %></p>
-          <p class="description"><%= item.description %></p>
-          <a class="button" href="/contact">Inquire</a>
+      <div class="detail-layout">
+        <div class="detail-hero">
+          <% if (item.images && item.images.length) { %>
+            <div class="detail-carousel">
+              <div class="detail-slides">
+                <% item.images.forEach(function(src, i){ %>
+                  <div class="detail-slide" data-index="<%= i %>">
+                    <img src="<%= src %>" alt="<%= item.title %> - <%= i+1 %>" />
+                  </div>
+                <% }) %>
+              </div>
+              <button class="detail-prev" aria-label="Previous image">‹</button>
+              <button class="detail-next" aria-label="Next image">›</button>
+            </div>
+          <% } else { %>
+            <img src="<%= item.image %>" alt="<%= item.title %>" />
+          <% } %>
         </div>
-      </article>
+        <aside class="detail-aside">
+          <div class="panel">
+            <h1 class="m0"><%= item.title %></h1>
+            <% if (item.mileage) { %>
+              <div class="mileage"><strong>Mileage:</strong> <%= item.mileage %></div>
+            <% } %>
+            <div class="badges"><span class="badge"><%= item.category %></span></div>
+            <div class="price"><%= item.price %></div>
+            <p class="mt8"><%= item.description %></p>
+            <div class="mt16"><a class="button primary" href="/contact">Contact Seller</a></div>
+          </div>
+        </aside>
+      </div>
     </main>
     <footer>
       <%- include('../partials/_footer') %>
     </footer>
+    <script>
+    (function(){
+      var car = document.querySelector('.detail-carousel');
+      if (!car) return;
+      car.setAttribute('data-js-enabled','1');
+      var slides = car.querySelector('.detail-slides');
+      var total = slides.children.length; var idx = 0;
+      function show(i){ idx = (i + total) % total; slides.style.transform = 'translateX(' + (-idx * 100) + '%)'; }
+      var next = car.querySelector('.detail-next');
+      var prev = car.querySelector('.detail-prev');
+      next && next.addEventListener('click', function(){ show(idx+1); });
+      prev && prev.addEventListener('click', function(){ show(idx-1); });
+      var t = setInterval(function(){ show(idx+1); }, 3500);
+      car.addEventListener('mouseenter', function(){ clearInterval(t); });
+      car.addEventListener('mouseleave', function(){ t = setInterval(function(){ show(idx+1); }, 3500); });
+    })();
+    </script>
   </body>
 </html>

@@ -1,23 +1,104 @@
 [
   {
-    "title": "Red Ceramic Vase",
-    "slug": "red-ceramic-vase",
-    "price": "$34",
-    "description": "Handmade red ceramic vase. Perfect for small bouquets.",
-    "image": "/images/vase.jpg"
+    "title": "2012 Honda Fit Sport",
+    "slug": "2012-honda-fit-sport",
+    "price": "$13,422",
+    "mileage": "37,929 miles",
+    "description": "Compact car with great fuel efficiency and good handling. Well maintained with low mileage.",
+    "images": [
+      "https://images2.autotrader.com/hn/c/5507de392517474f95fe4175d4f1af37.jpg?format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/c516b04ecca84505b01c05ab09b48c1a.jpg?format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/e6fe174c09274338bd2394bd3fc0bbc7.jpg?format=auto&width=800&height=600"
+    ],
+    "image": "https://images2.autotrader.com/hn/c/5507de392517474f95fe4175d4f1af37.jpg?format=auto&width=488&height=366",
+    "category": "Cars"
   },
   {
-    "title": "Blue Cotton Scarf",
-    "slug": "blue-cotton-scarf",
-    "price": "$22",
-    "description": "Lightweight cotton scarf with blue tones.",
-    "image": "/images/scarf.jpg"
+    "title": "2003 Chevrolet Avalanche",
+    "slug": "2003-chevrolet-avalanche",
+    "price": "$11,409",
+    "mileage": "62,481 miles",
+    "description": "Full-size pickup with towing package and spacious cargo area.",
+    "images": [
+      "https://images2.autotrader.com/hn/c/9b30006a90be4c9eb86807a9048e4b51.jpg?format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/8701618718374290a0b8c18122de82dd.jpg?format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/8d927666df1846af8066966176dd9544.jpg?format=auto&width=800&height=600"
+    ],
+    "image": "https://images2.autotrader.com/hn/c/9b30006a90be4c9eb86807a9048e4b51.jpg?format=auto&width=488&height=366",
+    "category": "Trucks"
   },
   {
-    "title": "Oak Wood Bowl",
-    "slug": "oak-wood-bowl",
-    "price": "$45",
-    "description": "Small oak wood bowl, food-safe finish.",
-    "image": "/images/bowl.jpg"
+    "title": "2005 GMC Yukon XL 1500 Denali",
+    "slug": "2005-gmc-yukon-xl-1500-denali-sport-utility-4d",
+    "price": "$1,700",
+    "mileage": "329,000 miles",
+    "description": "Large SUV with leather interior, third-row seating, and powerful V8 engine.",
+    "images": [
+      "https://images2.autotrader.com/ps-vehicle-media/5e981ad1-2f4c-4dd4-8509-75bfe21f8fa0?format=auto&width=800&height=600",
+      "https://images2.autotrader.com/ps-vehicle-media/2b134f9a-15d2-4735-bde9-b45f44f77745.jpg?format=auto&width=800&height=600",
+      "https://images2.autotrader.com/ps-vehicle-media/15aeb4b3-c179-4ae7-bb19-35bbc2282a6c.jpg?format=auto&width=800&height=600"
+    ],
+    "image": "https://images2.autotrader.com/ps-vehicle-media/5e981ad1-2f4c-4dd4-8509-75bfe21f8fa0?format=auto&width=488&height=366",
+    "category": "SUVs"
+  },
+  {
+    "title": "Available Slot 1",
+    "slug": "available-slot-1",
+    "price": "TBD",
+    "mileage": "TBD",
+    "description": "Placeholder slot available for a new item.",
+    "images": ["/images/placeholder.jpg","/images/placeholder.jpg","/images/placeholder.jpg"],
+    "image": "/images/placeholder.jpg",
+    "category": "uncategorized"
+  },
+  {
+    "title": "Available Slot 2",
+    "slug": "available-slot-2",
+    "price": "TBD",
+    "mileage": "TBD",
+    "description": "Placeholder slot available for a new item.",
+    "images": ["/images/placeholder.jpg","/images/placeholder.jpg","/images/placeholder.jpg"],
+    "image": "/images/placeholder.jpg",
+    "category": "uncategorized"
+  },
+  {
+    "title": "Available Slot 3",
+    "slug": "available-slot-3",
+    "price": "TBD",
+    "mileage": "TBD",
+    "description": "Placeholder slot available for a new item.",
+    "images": ["/images/placeholder.jpg","/images/placeholder.jpg","/images/placeholder.jpg"],
+    "image": "/images/placeholder.jpg",
+    "category": "uncategorized"
+  },
+  {
+    "title": "Available Slot 4",
+    "slug": "available-slot-4",
+    "price": "TBD",
+    "mileage": "TBD",
+    "description": "Placeholder slot available for a new item.",
+    "images": ["/images/placeholder.jpg","/images/placeholder.jpg","/images/placeholder.jpg"],
+    "image": "/images/placeholder.jpg",
+    "category": "uncategorized"
+  },
+  {
+    "title": "Available Slot 5",
+    "slug": "available-slot-5",
+    "price": "TBD",
+    "mileage": "TBD",
+    "description": "Placeholder slot available for a new item.",
+    "images": ["/images/placeholder.jpg","/images/placeholder.jpg","/images/placeholder.jpg"],
+    "image": "/images/placeholder.jpg",
+    "category": "uncategorized"
+  },
+  {
+    "title": "Available Slot 6",
+    "slug": "available-slot-6",
+    "price": "TBD",
+    "mileage": "TBD",
+    "description": "Placeholder slot available for a new item.",
+    "images": ["/images/placeholder.jpg","/images/placeholder.jpg","/images/placeholder.jpg"],
+    "image": "/images/placeholder.jpg",
+    "category": "uncategorized"
   }
 ]

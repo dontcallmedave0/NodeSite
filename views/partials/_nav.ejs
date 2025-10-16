@@ -1,25 +1,26 @@
-<nav class="nav">
-  <a href="/" class="brand">NodeSite</a>
-  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  <ul class="nav-list">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/services">Services</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/items">Collection</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-</nav>
+<header class="site-header">
+  <div class="container nav" role="navigation" aria-label="Main">
+    <a href="/" class="brand"><span class="brand-badge">NS</span> NodeSite</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/items">All</a>
+      <a href="/category/Cars">Cars</a>
+      <a href="/category/Trucks">Trucks</a>
+      <a href="/category/SUVs">SUVs</a>
+      <a class="button primary" href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
 <script>
-// Minimal client-side toggle for mobile nav
 document.addEventListener('DOMContentLoaded', function(){
   var btn = document.querySelector('.menu-toggle');
-  var list = document.querySelector('.nav-list');
-  if (!btn || !list) return;
+  var nav = document.querySelector('.nav-links');
+  if (!btn || !nav) return;
   btn.addEventListener('click', function(){
-    var visible = list.style.display === 'block';
-    list.style.display = visible ? 'none' : 'block';
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
   });
 });
 </script>
