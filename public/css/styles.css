@@ -22,6 +22,13 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222}
 .card h2{margin:8px 0;font-size:16px}
 .price{font-weight:700}
 .mileage{color:#555;font-size:13px;margin-top:4px}
+
+/* Nav link spacing + outline hover */
+.nav-links a{margin:0 6px;padding:8px 10px;border-radius:0;display:inline-block;transition:all 160ms ease}
+.nav-links a:not(.button){border:1px solid transparent}
+.nav-links a.button{border:1px solid transparent}
+.nav-links a:hover{border-color:#ccc;box-shadow:0 2px 6px rgba(0,0,0,0.06);background:#fff}
+.nav-links a.button:hover{border-color:#0077cc;background:#0077cc;color:#fff}
 .detail .detail-layout{display:block}
 @media(min-width:1000px){.detail .detail-layout{display:grid;grid-template-columns:1fr 320px;gap:12px}}
 .panel{border:1px solid #ddd;padding:10px}
