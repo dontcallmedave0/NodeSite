@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_head', { title: title || 'Admin' }) %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/_nav') %>
+    </header>
+
+    <main class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h1 style="margin:0">Admin</h1>
+        <form method="POST" action="/admin/logout" onsubmit="return confirm('Sign out of admin?');" style="margin:0">
+          <button type="submit" class="button" style="padding:6px 10px">Logout</button>
+        </form>
+      </div>
+      <% if (added) { %>
+        <div class="panel" style="margin-bottom:12px;background:#e6ffef;border:1px solid #bdeecd;color:#0a3b2a;padding:10px;border-radius:6px">New listing added successfully.</div>
+      <% } %>
+
+      <section>
+        <h2>Add listing</h2>
+        <% if (typeof error !== 'undefined' && error) { %>
+          <div class="panel" style="margin-bottom:12px;background:#fff1f0;border:1px solid #f2b8b5;color:#3d0b08;padding:10px;border-radius:6px"><%= error %></div>
+        <% } %>
+        <form method="POST" action="/admin/items" style="display:grid;gap:8px;max-width:720px">
+          <input name="title" placeholder="Title" required />
+          <input name="price" placeholder="Price" required />
+          <input name="category" placeholder="Category" />
+          <input name="mileage" placeholder="Mileage" />
+          <input name="image" placeholder="Image URL (primary)" />
+          <input name="image2" placeholder="Additional image URL" />
+          <input name="image3" placeholder="Additional image URL" />
+          <textarea name="description" placeholder="Short description"></textarea>
+          <label><input type="checkbox" name="featured" /> Featured</label>
+          <button type="submit" class="button primary">Add listing</button>
+        </form>
+      </section>
+
+      <section style="margin-top:24px">
+        <h2>Listings</h2>
+        <% if (typeof deleted !== 'undefined' && deleted) { %>
+          <div class="panel" style="margin-bottom:12px;background:#fff6eb;border:1px solid #f3d7b9;color:#4a2a00;padding:10px;border-radius:6px">Listing deleted.</div>
+        <% } %>
+        <table>
+          <thead>
+            <tr><th>Title</th><th>Price</th><th>Category</th><th>Slug</th><th></th></tr>
+          </thead>
+          <tbody>
+            <% (items || []).forEach(function(it){ %>
+            <tr>
+              <td><%= it.title %></td>
+              <td><%= it.price %></td>
+              <td><%= it.category %></td>
+              <td><%= it.slug %></td>
+              <td style="display:flex;gap:8px;align-items:center">
+                <a class="button" href="/admin/items/edit?slug=<%= encodeURIComponent(it.slug) %>">Edit</a>
+                <form method="POST" action="/admin/items/delete" onsubmit="return confirm('Delete this listing?');" style="margin:0">
+                  <input type="hidden" name="slug" value="<%= it.slug %>" />
+                  <button type="submit" class="btn">Delete</button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </section>
+
+      
+      <section style="margin-top:24px">
+        <h2>Contact messages</h2>
+        <% if (!messages || !messages.length) { %>
+          <p>No messages saved yet.</p>
+        <% } else { %>
+          <ul>
+            <% messages.forEach(function(m){ %>
+              <li><strong><%= m.name %></strong> &lt;<%= m.email %>&gt; — <%= m.message %> <small>(<%= m.date %>)</small></li>
+            <% }) %>
+          </ul>
+          <p><a href="/data/messages.json" download>Download messages.json</a></p>
+        <% } %>
+      </section>
+
+    </main>
+
+    <footer>
+      <%- include('../partials/_footer') %>
+    </footer>
+  </body>
+</html>

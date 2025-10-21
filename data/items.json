@@ -4,7 +4,7 @@
     "slug": "2012-honda-fit-sport",
     "price": "$13,422",
     "mileage": "37,929 miles",
-  "featured": true,
+    "featured": true,
     "description": "Compact car with great fuel efficiency and good handling. Well maintained with low mileage.",
     "images": [
       "https://images2.autotrader.com/hn/c/5507de392517474f95fe4175d4f1af37.jpg?format=auto&width=800&height=600",
@@ -47,11 +47,13 @@
     "slug": "2004-honda-accord-ex-l-v6",
     "price": "$12,884",
     "mileage": "22,235 miles",
-     "featured": true,
+    "featured": true,
     "description": "Leather interior, heated seats, sunroof. Fading clearcoat on roof.",
-    "images": ["https://images2.autotrader.com/hn/c/dbb93f1115484e3b82516420c4484237.jpg",
-    "https://images2.autotrader.com/hn/c/d99ae864a9d24286b759c65748b17cde.jpg",
-    "https://images2.autotrader.com/hn/c/94e62d16d1e84ea19a447725aff183de.jpg"],
+    "images": [
+      "https://images2.autotrader.com/hn/c/dbb93f1115484e3b82516420c4484237.jpg",
+      "https://images2.autotrader.com/hn/c/d99ae864a9d24286b759c65748b17cde.jpg",
+      "https://images2.autotrader.com/hn/c/94e62d16d1e84ea19a447725aff183de.jpg"
+    ],
     "image": "https://images2.autotrader.com/hn/c/dbb93f1115484e3b82516420c4484237.jpg",
     "category": "Cars"
   },
@@ -60,11 +62,13 @@
     "slug": "2004-dodge-dakota-quad-cab-sport-pickup-4d-5-1-2-ft",
     "price": "$9,800",
     "mileage": "30,900 miles",
-     "featured": true,
+    "featured": true,
     "description": "Well maintained former fire dept. fire investigation vehicle. New tires",
-    "images": ["https://images2.autotrader.com/ps-vehicle-media/a21338f1-9e85-4f5f-90c2-ff0f9355ba0e.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/ps-vehicle-media/0d350768-2585-41e2-90f3-732ce4802443.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/ps-vehicle-media/18bf15bf-a80a-42c5-97cd-bbfd6cea560c.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"],
+    "images": [
+      "https://images2.autotrader.com/ps-vehicle-media/a21338f1-9e85-4f5f-90c2-ff0f9355ba0e.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/ps-vehicle-media/0d350768-2585-41e2-90f3-732ce4802443.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/ps-vehicle-media/18bf15bf-a80a-42c5-97cd-bbfd6cea560c.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"
+    ],
     "image": "https://images2.autotrader.com/ps-vehicle-media/a21338f1-9e85-4f5f-90c2-ff0f9355ba0e.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
     "category": "Trucks"
   },
@@ -74,9 +78,11 @@
     "price": "$7,995",
     "mileage": "32,810 miles",
     "description": "Clean title, leather interior, fwd.",
-    "images": ["https://images2.autotrader.com/hn/c/0beacb037e8b4aeeb57618f27cc57795.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/181cc28cdd564bb594781dfba5194ce1.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/adbef98ad6744a8e99eed17ad876ade3.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"],
+    "images": [
+      "https://images2.autotrader.com/hn/c/0beacb037e8b4aeeb57618f27cc57795.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/181cc28cdd564bb594781dfba5194ce1.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/adbef98ad6744a8e99eed17ad876ade3.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"
+    ],
     "image": "https://images2.autotrader.com/hn/c/0beacb037e8b4aeeb57618f27cc57795.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
     "category": "SUVs"
   },
@@ -86,9 +92,11 @@
     "price": "$11,999",
     "mileage": "29,000 miles",
     "description": "Clean carfax, new battery, tires, 1 owner, great gas saver.",
-    "images": ["https://images2.autotrader.com/hn/c/cd22f60849624bc89f5c41554685bd5f.jpg",
-    "https://images2.autotrader.com/hn/c/8b2cabe4c2014198ad049c87cecb910a.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/0c247a80bacf4ceeaede9c41908f3f24.jpg"],
+    "images": [
+      "https://images2.autotrader.com/hn/c/cd22f60849624bc89f5c41554685bd5f.jpg",
+      "https://images2.autotrader.com/hn/c/8b2cabe4c2014198ad049c87cecb910a.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/0c247a80bacf4ceeaede9c41908f3f24.jpg"
+    ],
     "image": "https://images2.autotrader.com/hn/c/cd22f60849624bc89f5c41554685bd5f.jpg",
     "category": "Cars"
   },
@@ -98,9 +106,11 @@
     "price": "$12,995",
     "mileage": "36,346 miles",
     "description": "Great Condition Nissan Frontier XE with Power Package. Reliable and well-maintained truck.",
-    "images": ["https://images2.autotrader.com/hn/c/1ad064f5861d408c882c88cb4bd09c3b.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/359b547364b346959c83a142a9dfb097.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/df04c1ed44254cc18168947927679a47.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"],
+    "images": [
+      "https://images2.autotrader.com/hn/c/1ad064f5861d408c882c88cb4bd09c3b.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/359b547364b346959c83a142a9dfb097.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/df04c1ed44254cc18168947927679a47.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"
+    ],
     "image": "https://images2.autotrader.com/hn/c/1ad064f5861d408c882c88cb4bd09c3b.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
     "category": "Trucks"
   },
@@ -110,10 +120,26 @@
     "price": "$13,790",
     "mileage": "36,841 miles",
     "description": "A great compact SUV with modern features and good fuel economy.",
-    "images": ["https://images2.autotrader.com/hn/c/9a04d758c1df47cfb746c4472c926815.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/41fbded1b7154e46953e7cefcbf53a07.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
-    "https://images2.autotrader.com/hn/c/89c8af67da0a4cf6b2402dab18b270cb.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"],
+    "images": [
+      "https://images2.autotrader.com/hn/c/9a04d758c1df47cfb746c4472c926815.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/41fbded1b7154e46953e7cefcbf53a07.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/89c8af67da0a4cf6b2402dab18b270cb.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"
+    ],
     "image": "https://images2.autotrader.com/hn/c/9a04d758c1df47cfb746c4472c926815.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
     "category": "SUVs"
+  },
+  {
+    "title": "2013 Acura TSX Special Edition",
+    "price": "$10,995",
+    "category": "Cars",
+    "mileage": "84,389 miles",
+    "image": "https://images2.autotrader.com/hn/c/f381eb5c1e984f248467564526852e0a.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+    "images": [
+      "https://images2.autotrader.com/hn/c/f381eb5c1e984f248467564526852e0a.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/3d0e227a59c4461ea0c2214a77f31191.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600",
+      "https://images2.autotrader.com/hn/c/e230923a89d246fd9d7fb9fba29f7294.jpg?format=auto&width=800&height=600&format=auto&width=800&height=600"
+    ],
+    "description": "Sporty well maintained car, leather interior, cd stereo",
+    "slug": "2013-acura-tsx-special-edition"
   }
 ]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_head', { title: title || 'Edit Listing' }) %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/_nav') %>
+    </header>
+
+    <main class="container" style="max-width:720px">
+      <h1>Edit listing</h1>
+      <% if (error) { %>
+        <div class="panel" style="margin-bottom:12px;background:#fff1f0;border:1px solid #f2b8b5;color:#3d0b08;padding:10px;border-radius:6px"><%= error %></div>
+      <% } %>
+
+      <form method="POST" action="/admin/items/edit" style="display:grid;gap:8px">
+        <input type="hidden" name="slug" value="<%= item.slug %>" />
+        <input name="title" placeholder="Title" value="<%= item.title %>" required />
+        <input name="price" placeholder="Price" value="<%= item.price %>" required />
+        <input name="category" placeholder="Category" value="<%= item.category %>" />
+        <input name="mileage" placeholder="Mileage" value="<%= item.mileage %>" />
+        <input name="image" placeholder="Image URL (primary)" value="<%= (item.images && item.images[0]) || item.image || '' %>" />
+        <input name="image2" placeholder="Additional image URL" value="<%= (item.images && item.images[1]) || '' %>" />
+        <input name="image3" placeholder="Additional image URL" value="<%= (item.images && item.images[2]) || '' %>" />
+        <textarea name="description" placeholder="Short description"><%= item.description || '' %></textarea>
+        <label><input type="checkbox" name="featured" <%= item.featured ? 'checked' : '' %> /> Featured</label>
+        <div style="display:flex;gap:8px">
+          <button type="submit" class="button primary">Save changes</button>
+          <a href="/admin" class="button">Cancel</a>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <%- include('../partials/_footer') %>
+    </footer>
+  </body>
+</html>

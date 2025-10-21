@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_head', { title: title || 'Admin Login' }) %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/_nav') %>
+    </header>
+
+    <main class="container" style="max-width:480px;margin-top:48px">
+      <h1>Admin Login</h1>
+      <% if (error) { %>
+        <div class="panel" style="margin-bottom:12px;background:#fff1f0;border:1px solid #f2b8b5;color:#3d0b08;padding:10px;border-radius:6px"><%= error %></div>
+      <% } %>
+      <form method="POST" action="/admin/login" style="display:grid;gap:8px">
+        <input name="pass" type="password" placeholder="Passcode" required />
+        <div style="display:flex;gap:8px">
+          <button type="submit" class="button primary">Sign in</button>
+          <a href="/" class="button">Back</a>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <%- include('../partials/_footer') %>
+    </footer>
+  </body>
+</html>

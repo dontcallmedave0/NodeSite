@@ -9,6 +9,7 @@
       <a href="/category/Trucks">Trucks</a>
       <a href="/category/SUVs">SUVs</a>
       <a class="button primary" href="/contact">Contact</a>
+      <button id="a11y-toggle" class="btn ghost" aria-pressed="false" aria-label="Toggle accessibility mode">A11Y</button>
     </nav>
   </div>
 </header>
@@ -22,5 +23,18 @@ document.addEventListener('DOMContentLoaded', function(){
     var open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open);
   });
+  // Accessibility toggle
+  var a11y = document.getElementById('a11y-toggle');
+  if(a11y){
+    // initialize from localStorage
+    var enabled = localStorage.getItem('a11y') === '1';
+    if(enabled) document.body.classList.add('a11y');
+    a11y.setAttribute('aria-pressed', enabled);
+    a11y.addEventListener('click', function(){
+      var on = document.body.classList.toggle('a11y');
+      a11y.setAttribute('aria-pressed', on);
+      localStorage.setItem('a11y', on ? '1' : '0');
+    });
+  }
 });
 </script>
